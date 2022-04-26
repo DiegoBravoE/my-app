@@ -2,13 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const user={
+      nombre:"Diego Bravo",
+      Edad:38,
+      PeliculaFavorita:"n/a",
+      Musica:"Rock"
+  }
   return (
     <div className="App">
      <ul>
-       <li><b> NOMBRE: </b>Diego Bravo </li>
-       <li><b> EDAD:</b>38</li>
-       <li><b>PELICULA FAVORITA:</b>n/a </li>
-       <li><b>MUSICA FAVORITA:</b>ROCK </li>
+       <li><b> NOMBRE: </b>{user.nombre} </li>
+       <li><b> EDAD:</b>{user.Edad} Años</li>
+       <li><b>PELICULA FAVORITA:</b>{user.PeliculaFavorita} </li>
+       <li><b>MUSICA FAVORITA:</b>{user.Musica} </li>
      </ul>
       
     </div>
