@@ -5,10 +5,10 @@ function App() {
   return (
     <div className="App">
      <ul>
-       <li>NOMBRE:Diego </li>
-       <li>EDAD:38</li>
-       <li>PELICULA FAVORITA:n/a </li>
-       <li>MUSICA FAVORITA:ROCK </li>
+       <li><b> NOMBRE: </b>Diego Bravo </li>
+       <li><b> EDAD:</b>38</li>
+       <li><b>PELICULA FAVORITA:</b>n/a </li>
+       <li><b>MUSICA FAVORITA:</b>ROCK </li>
      </ul>
       
     </div>
