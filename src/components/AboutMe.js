@@ -8,8 +8,6 @@ const AboutMe = () => {
         Musica:"Rock"
       }
 
-
-
     return (
         <div className="card" >
             <ul>
