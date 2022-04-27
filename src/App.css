@@ -15,29 +15,22 @@ li {
   border-radius: 15px;
   margin-left: 20px;
   background-color: rgba(12, 250, 36, 0.651);
+  box-shadow: 1px 2px 15px 0px rgba(12, 250, 36, 0.651);
   width: 250px;
 }
-.card2{
-  border-radius: 15px;
-  margin-left: 20px;
-  background-color: rgb(238, 77, 77);
-  width: 250px;
+#tomato{
+  background-color:tomato;
+  box-shadow: 1px 2px 15px 0px tomato;
 }
-.card3{
-  border-radius: 15px;
-  margin-left: 20px;
-  background-color: rgb(167, 190, 211);
-  width: 250px;
+#royalblue{
+  background-color:royalblue;
+  box-shadow: 1px 2px 15px 0px royalblue;
 }
-.card4{
-  border-radius: 15px;
-  margin-left: 20px;
-  background-color: rgb(226, 184, 205);
-  width: 250px;
+#pink{
+  background-color:rgb(214, 164, 214);
+  box-shadow: 1px 2px 15px 0px palevioletred;
 }
-.card5{
-  border-radius: 15px;
-  margin-left: 20px;
-  background-color: rgb(229, 240, 130);
-  width: 250px;
+#yellowgreen{
+  background-color:yellowgreen;
+  box-shadow: 1px 2px 15px 0px yellowgreen;
 }
