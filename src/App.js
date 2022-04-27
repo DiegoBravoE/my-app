@@ -1,23 +1,29 @@
 import logo from './logo.svg';
+import Componente1 from'./components/Componente1.js';
+import Hobbies from'./components/Hobbies.js';
+import Pasatiempo from'./components/Pasatiempo.js';
+import ComidaFav from'./components/ComidaFav.js';
+import MiMstack from'./components/MiMstack.js';
 import './App.css';
 
 function App() {
 
   const user={
-      nombre:"Diego Bravo",
-      Edad:38,
-      PeliculaFavorita:"n/a",
-      Musica:"Rock"
+    nombre:"Diego Bravo",
+    Edad:38,
+    PeliculaFavorita:"Interestelar",
+    Musica:"Rock"
   }
   return (
-    <div className="App">
-     <ul>
-       <li><b> NOMBRE: </b>{user.nombre} </li>
-       <li><b> EDAD:</b>{user.Edad} Años</li>
-       <li><b>PELICULA FAVORITA:</b>{user.PeliculaFavorita} </li>
-       <li><b>MUSICA FAVORITA:</b>{user.Musica} </li>
-     </ul>
+    
+    <div className="contenedor">
+
       
+     <Componente1/>
+     <Hobbies/>
+     <Pasatiempo/>
+     <ComidaFav/>
+     <MiMstack/>
     </div>
   );
 }
