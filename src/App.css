@@ -13,12 +13,10 @@ li {
 }
 .off{
   
-  padding:15px;
+  
   border-radius: 150px;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 20px;
-  background-color: rgba(99, 99, 104, 0.651);
-  align-items: center;
   width: 100px;
   height: 100px;
 }
