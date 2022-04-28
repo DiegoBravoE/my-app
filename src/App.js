@@ -12,6 +12,8 @@ function App() {
   return (
     <div>
          <Buld/>
+         <Buld/>
+         <Buld/>
     </div>
   );
 }
