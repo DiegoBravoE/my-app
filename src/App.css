@@ -11,26 +11,23 @@ li {
   display:flex;
   margin:25px;
 }
-.card{
-  border-radius: 15px;
+.off{
+  
+  padding:15px;
+  border-radius: 150px;
   margin-left: 20px;
-  background-color: rgba(12, 250, 36, 0.651);
-  box-shadow: 1px 2px 15px 0px rgba(12, 250, 36, 0.651);
-  width: 250px;
+  margin-top: 20px;
+  background-color: rgba(99, 99, 104, 0.651);
+  align-items: center;
+  width: 100px;
+  height: 100px;
 }
-#tomato{
-  background-color:tomato;
-  box-shadow: 1px 2px 15px 0px tomato;
-}
-#royalblue{
-  background-color:royalblue;
-  box-shadow: 1px 2px 15px 0px royalblue;
-}
-#pink{
-  background-color:rgb(214, 164, 214);
-  box-shadow: 1px 2px 15px 0px palevioletred;
-}
-#yellowgreen{
-  background-color:yellowgreen;
-  box-shadow: 1px 2px 15px 0px yellowgreen;
+
+button{
+  display: flex;
+ align-items: center;
+  height: 25px;
+  width: 45px;
+  margin-left: 60px;
+  margin-top: 10px;
 }
