@@ -1,21 +1,18 @@
-import Buld from './components/Buld'
-
+//import Buld from './components/Buld'
+import Usuario from './components/Usuario';
 import './App.css';
-
-
-
-
-
 
 function App() {
 
   return (
     <div>
-         <Buld/>
-         <Buld/>
-         <Buld/>
+      
+         <Usuario/>
+         
+         
     </div>
   );
 }
 
 export default App;
+
