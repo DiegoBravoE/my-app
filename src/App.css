@@ -8,8 +8,13 @@ li {
   padding: 5px;
 }
 .contenedor{
+ 
+  border-radius: 25px;
+  padding:1rem;
+  width:50%;
+  background: rgb(63, 85, 58);
   display:flex;
-  margin:25px;
+  margin:25px 250px;
   flex-direction: column;
   align-items: center;
 }
@@ -24,11 +29,26 @@ li {
 }
 
 button{
+ cursor: pointer;
+  background:whitesmoke;
+  font-size: 15px;
+  font-family: fantasy;
+  border-radius: 5px;
+  border: none;
   padding: 10px;
   display: flex;
   align-items: center;
   height: 30px;
   width: max-content;
- 
   margin-top: 10px;
+}
+.datos{
+  padding: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.datos i{
+  padding: 5px;
 }

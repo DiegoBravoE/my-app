@@ -1,5 +1,7 @@
 //import Buld from './components/Buld'
 import Usuario from './components/Usuario';
+import Contador from './components/Contador';
+import Api from './components/Api';
 import './App.css';
 
 function App() {
@@ -8,8 +10,8 @@ function App() {
     <div>
       
          <Usuario/>
-         
-         
+         <Contador/>
+         <Api/>
     </div>
   );
 }

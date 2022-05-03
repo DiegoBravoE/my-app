@@ -15,4 +15,4 @@ const Buld = () => {
 };
 
 export default Buld;
-*/
+
