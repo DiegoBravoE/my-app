@@ -1,5 +1,5 @@
-import axios, { Axios } from 'axios';
 import {useState,useEffect} from 'react';
+import axios, { Axios } from 'axios';
 import React from 'react';
 
 const Api2 = () => {
