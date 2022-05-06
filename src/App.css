@@ -8,15 +8,15 @@ li {
   padding: 5px;
 }
 .contenedor{
- 
-  border-radius: 25px;
-  padding:1rem;
-  width:50%;
-  background: rgb(63, 85, 58);
+   
   display:flex;
-  margin:25px 250px;
   flex-direction: column;
   align-items: center;
+  border-radius: 25px;
+  padding:1rem 5rem;
+  width:max-content;
+  background: rgb(86, 194, 86);
+  margin:5rem auto;
 }
 .off{
   
@@ -32,7 +32,7 @@ button{
  cursor: pointer;
   background:whitesmoke;
   font-size: 15px;
-  font-family: fantasy;
+  
   border-radius: 5px;
   border: none;
   padding: 10px;
