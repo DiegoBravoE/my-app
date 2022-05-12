@@ -3,9 +3,11 @@ h2{
   text-align: center;
 }
 li {
- 
+ display: flex;
+ flex-direction: column;
   list-style: none;
   padding: 5px;
+
 }
 .contenedor{
    

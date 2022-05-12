@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import users from '../quoter.json'
+import users from '../quotes.json'
 
 
 
