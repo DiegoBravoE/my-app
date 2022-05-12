@@ -1,5 +1,7 @@
 //import Buld from './components/Buld'
-import Countrys from './Countrys'
+
+import AppUsers from '.components/AppUsers'
+import react from 'react'
 import './App.css';
 
 function App() {
@@ -7,7 +9,8 @@ function App() {
   return (
     <div >
         
-      <Countrys/>
+      <AppUsers/>
+      
         
     </div>
   );
