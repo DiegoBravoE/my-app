@@ -6,25 +6,16 @@ const Ejercicios = ({ejercicios}) => {
             <ul>
 
             {
-
                 ejercicios.map(ejercicio=>(
 
-                <li>
+                <li   key ={ejercicio.id}>
                     <h1>{ejercicio.titulo}</h1>
                     <p>{ejercicio.descripcion}</p>
-                   
+                    <p>Is Available:{ejercicio.isAvailable.toString()}</p>
 
                 </li>
-
-
                 ))
-
-
             }
-
-
-
-
 
             </ul>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react'
 
-const ProductForms = () => {
+const ProductForms = ({addProducts}) => {
 const[name,setName]= useState("")
 const[category,setCategory]= useState("")
 const[precio,setPrecio]= useState("")
@@ -16,6 +16,7 @@ const[isavailable,setIsabailable]= useState(false)
 const submit=  e=> {
        e.preventDefault();
        const product={
+             id:Date.now(),
             name: name,
             category: category,
             precio: precio,
@@ -26,6 +27,8 @@ const submit=  e=> {
             isavailable: isavailable
 
        }
+       addProducts(product);
+
      }
 
 

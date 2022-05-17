@@ -2,11 +2,12 @@
 import ProductForms from './components/ProductForms'
 import ProducList from './components/ProducList'
 import Ejercicios from './components/Ejercicios';
+import{useState} from 'react'
 import './App.css';
 
 function App() {
 
-const products=[{
+const initialProducs=[{
   id:1,
   name:"jabon",
   category:"higiene",
@@ -27,20 +28,31 @@ const ejercicios=[
   {
     id:1,
     titulo:"Hacer el entregable",
-    descripcion:"Hacer el trabaajo practico de react",
-    completado:false
+    descripcion:"Hacer el trabajo practico de react",
+    isAvailable:false
   }
 
 
 
 ]
+const [products,setProducts]=useState(initialProducs)
+
+   const addProducts=(producItem)=>{
+     setProducts([...products,producItem])
+
+   }
 
 
+const removeProduct=(name)=>{
+  console.log(name);
+}
+
+   
   return (
     <div >
       
-      <ProductForms/>
-      <ProducList products={products}/>
+      <ProductForms   addProducts={addProducts}/>
+      <ProducList products={products}  removeProduct={removeProduct}/>
       <Ejercicios  ejercicios={ejercicios}/>
     </div>
   );

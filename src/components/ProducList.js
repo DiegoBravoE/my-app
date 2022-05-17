@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProducList = ({products}) => {
+const ProducList = ({products,removeProduct}) => {
     return (
         <div>
             <ul>
@@ -13,6 +13,7 @@ const ProducList = ({products}) => {
                       <p>category:{product.category}</p>
                       <p>precio:{product.precio}</p>
                       <p>Is Available:{product.isAvailable.toString()}</p>
+                      <button onClick={()=>removeProduct(product.name)}>Eliminar</button>
                 </li>
 
               ))
