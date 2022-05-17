@@ -1,17 +1,13 @@
 import React from 'react';
 import users from '../users.json'
-
+import Users from './Users'
 
 const AppUsers = () => {
     return (
         <div>
              <ul >
-           {users.map(user => (
-          <li className='contenedor' key={user.id.value}>
-          <img src={user.picture.large} alt="" /> 
-            <p>Nombre:{user.name.title}  {user.name.first} {user.name.last} </p>  
-            <p>Email:{user.email}</p> 
-         </li>
+           {users.map((user) => (
+          <Users user={user}key={user.email}/>
           
         ))}
            </ul> 

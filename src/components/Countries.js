@@ -1,23 +1,23 @@
 import axios from 'axios';
 import {useState,useEffect} from 'react';
+import CountrieItems from './CountrieItems';
 
 
 const Countries = () => {
-const [countries,setCountries]=useState({})
+const [countries,setCountries]=useState([])
 useEffect(()=>{
 
     axios.get(`https://restcountries.com/v3.1/all`)
     .then(res=>setCountries(res.data))
 
 },[])
+console.log(countries)
     return (
        
-            <ul>
+            <ul >
                 {
-                 countries.map(country =>(
-                 <li key={country.cca2}>
-                     country{country.name?.official}
-                 </li>
+                 countries.map((country) =>(
+                 <CountrieItems country={country}key={country.cca2}/>
 
                         ))
                        
