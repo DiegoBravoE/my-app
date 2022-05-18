@@ -1,17 +1,22 @@
 import React from 'react';
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 
-const ProductForms = ({addProducts}) => {
+const ProductForms = ({addProducts,productSelected}) => {
 const[name,setName]= useState("")
 const[category,setCategory]= useState("")
 const[precio,setPrecio]= useState("")
 const[isAvailable,setIsAbailable]= useState(false)
 
 
-const[titulo,setTitulo]= useState("")
-const[descripcion,setDescripcion]= useState("")
-const[isavailable,setIsabailable]= useState(false)
+useEffect(()=>{
+if(productSelected!==null){
+    setName(productSelected.name)
+    setCategory(productSelected.category)
+    setPrecio(productSelected.precio)
+    setIsAbailable(productSelected.isAvailable)
 
+}
+},[productSelected])
 
 const submit=  e=> {
        e.preventDefault();
@@ -22,13 +27,9 @@ const submit=  e=> {
             precio: precio,
             isAvailable: isAvailable,
 
-            titulo:titulo,
-            descripcion:descripcion,
-            isavailable: isavailable
-
        }
        addProducts(product);
-
+      
      }
 
 
@@ -57,22 +58,7 @@ const submit=  e=> {
                 </div>
                 <button >Submit</button>
 
-                <div className="input-container">
-                <label htmlFor="titulo">Titulo</label>
-                <input type="text"  id="titulo"  onChange={(e)=>setTitulo(e.target.value)} value={titulo}/>
-                </div>
-
-                <div className="input-container">
-                <label htmlFor="descripcion">descripcion</label>
-                <input type="text"  id="tdescripcion"  onChange={(e)=>setDescripcion(e.target.value)} value={descripcion}/>
-                </div>
-                <div className="input-container">
-
-                <label htmlFor="isavailable">isavailable</label>
-                <input type="checkbox"  id="isavailable" checked={isavailable}
-                onChange={(e)=>setIsabailable(e.target.checked)}  />
-                </div>
-                <button>Submit</button>
+              
 
 
 

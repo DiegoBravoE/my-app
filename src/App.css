@@ -42,8 +42,9 @@ margin:.5rem;
 }
 
 button{
+  color: aliceblue;
  cursor: pointer;
-  background:rgb(55, 16, 196);
+  background:rgba(73, 44, 177, 0.76);
   font-size: 15px;
   border-radius: 5px;
   border: none;

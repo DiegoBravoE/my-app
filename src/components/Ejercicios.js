@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Ejercicios = ({ejercicios}) => {
+const Ejercicios = ({ejercicios,removeItem,selectItem}) => {
     return (
         <div>
             <ul>
@@ -12,8 +12,10 @@ const Ejercicios = ({ejercicios}) => {
                     <h1>{ejercicio.titulo}</h1>
                     <p>{ejercicio.descripcion}</p>
                     <p>Is Available:{ejercicio.isAvailable.toString()}</p>
-
+                    <button onClick={()=>removeItem(ejercicio.id)}>Eliminar</button>
+                    <button onClick={()=>selectItem(ejercicio)}>Editar</button>
                 </li>
+                
                 ))
             }
 
